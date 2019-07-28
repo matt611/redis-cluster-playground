@@ -7,4 +7,5 @@ The code and documentation in this repo are geared toward Mac OS. Your milage ma
 
 ## Install Redis
 The easiest way to install redis is to use brew:
+
 ```brew install redis```  
