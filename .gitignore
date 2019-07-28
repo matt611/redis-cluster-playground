@@ -1,0 +1,6 @@
+# redis files
+*/dump.rdb
+*/appendonly.aof
+*/nodes.conf
+
+
