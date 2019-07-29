@@ -34,7 +34,7 @@ This will create a plan for your new cluster and ask you to verify that it is co
 
 Now verify that you cluster is up and healthy by running the cluster nodes command from the cli again:
 
-```$ redis-cli -p 7000 -c cluster nodes ``
+```$ redis-cli -p 7000 -c cluster nodes ```
 
 Now the result should look like this:
 
