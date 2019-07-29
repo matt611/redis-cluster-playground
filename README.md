@@ -22,7 +22,7 @@ You should now have 6 individual instances of redis server running.  To verify t
 
 The result for each run should look like this:
 
-```06157637242f62d81dc9e6b77845ae0cea8c7d9e :7000@17000 myself,master - 0 0 0 connected``
+```06157637242f62d81dc9e6b77845ae0cea8c7d9e :7000@17000 myself,master - 0 0 0 connected```
 
 Now you can create a cluster using these instances:
 
