@@ -16,7 +16,7 @@ You can simulate a Redis cluster locally by starting serveral instances of Redis
 
 ```$ redis-server ./redis.conf ```
 
-You should now have 6 individual instances of redis server running.  To verify this open new terminal and run the following for each port:
+You should now have 6 individual instances of redis server running.  To verify this open a new terminal and run the following for each port:
 
 ```$ redis-cli -p 7000 -c cluster nodes ```
 
@@ -38,9 +38,11 @@ Now verify that you cluster is up and healthy by running the cluster nodes comma
 
 Now the result should look like this:
 
-```d1bd1c64224957ea839554d53007cd54c61ec6d9 127.0.0.1:7001@17001 master - 0 1564358787000 2 connected 5461-10922
+```
+d1bd1c64224957ea839554d53007cd54c61ec6d9 127.0.0.1:7001@17001 master - 0 1564358787000 2 connected 5461-10922
 06157637242f62d81dc9e6b77845ae0cea8c7d9e 127.0.0.1:7000@17000 myself,master - 0 1564358787000 1 connected 0-5460
 8dde930c589eaea4b4dedaaa435b619e6faf3fd0 127.0.0.1:7002@17002 master - 0 1564358788022 3 connected 10923-16383
 3a96e68b73084ebd60b4d38f89954a97bb035a70 127.0.0.1:7003@17003 slave 8dde930c589eaea4b4dedaaa435b619e6faf3fd0 0 1564358787000 4 connected
 1e151b50dd7da4003514f745a3d5f3c3352fa06d 127.0.0.1:7004@17004 slave 06157637242f62d81dc9e6b77845ae0cea8c7d9e 0 1564358787502 5 connected
-83eaba11ff872a064990dbf2970d07db4af82192 127.0.0.1:7005@17005 slave d1bd1c64224957ea839554d53007cd54c61ec6d9 0 1564358786991 6 connected```
+83eaba11ff872a064990dbf2970d07db4af82192 127.0.0.1:7005@17005 slave d1bd1c64224957ea839554d53007cd54c61ec6d9 0 1564358786991 6 connected
+```
